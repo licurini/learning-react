@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './Cars.css';
 
-class App extends Component {
+class Cars extends Component {
+  constructor (props) {
+	  super ();
+	  
+  }
+  
+  
   render() {
     return (
-      
+      <h1>{this.props.title}</h1>
     );
   }
 }
 
-export default App;
+export default Cars;
