@@ -72,7 +72,7 @@ class Cars extends Component {
 					<h1>{this.props.title}</h1>	
 				</div>	
 				
-				//presents elements of array as <li></li> - podpatrzone, zapamiętać, bo z pamięci raczej bym nie zapisał :D
+				{/* presents elements of array as <li></li> - podpatrzone, zapamiętać, bo z pamięci raczej bym nie zapisał :D */}
 				
 				{this.state.cartypes.map(function(c, id){
 					return (<li key={id}>{c.brand} - {c.type}</li>)
