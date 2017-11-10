@@ -53,12 +53,32 @@ class Cars extends Component {
 		
 		console.log("Component initialized. Initial state is set.")
     }
-  
-  
-    render() {
-      return (
-        <h1>{this.props.title}</h1>
-      );
+	
+	componentWillMount () {
+		console.log("Component Will Mount.")
+	}
+	
+	componentDidMount () {
+		console.log("Component Did Mount.")
+	}
+	
+	
+	render() {
+        
+		
+		return (
+			<div>	
+				<div>
+					<h1>{this.props.title}</h1>	
+				</div>	
+				
+				//presents elements of array as <li></li> - podpatrzone, zapamiętać, bo z pamięci raczej bym nie zapisał :D
+				
+				{this.state.cartypes.map(function(c, id){
+					return (<li key={id}>{c.brand} - {c.type}</li>)
+				})}
+			</div>	
+        );
     }
 }
 
