@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Cars.css';
+import Car from './Car';
 
 class Cars extends Component {
     constructor (props) {
@@ -74,8 +75,8 @@ class Cars extends Component {
 				
 				{/* presents elements of array as <li></li> - podpatrzone, zapamiętać, bo z pamięci raczej bym nie zapisał :D */}
 				
-				{this.state.cartypes.map(function(c, id){
-					return (<li key={id}>{c.brand} - {c.type}</li>)
+				{this.state.cartypes.map(function(c, index){
+					return <Car className="Car" name={c.brand} type={c.type} key={index}></Car>
 				})}
 			</div>	
         );
