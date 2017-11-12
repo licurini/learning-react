@@ -6,4 +6,4 @@
 * `Cars` take array as initial state
 
 ## 10.11.2017
-* 'Cars' now displays elements of array in \*<li>\*
+* 'Cars' now displays elements of array in list
