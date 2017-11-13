@@ -76,7 +76,9 @@ class Cars extends Component {
 				{/* generates instances of Car component */}
 				
 				{this.state.cartypes.map(function(car, index){
+
 					return <Car className="Car" {...car} key={index}></Car>
+
 				})}
 			</div>	
         );
