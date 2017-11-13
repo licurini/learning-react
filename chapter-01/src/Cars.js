@@ -73,10 +73,10 @@ class Cars extends Component {
 					<h1>{this.props.title}</h1>	
 				</div>	
 				
-				{/* presents elements of array as <li></li> - podpatrzone, zapamiętać, bo z pamięci raczej bym nie zapisał :D */}
+				{/* generates instances of Car component */}
 				
-				{this.state.cartypes.map(function(c, index){
-					return <Car className="Car" name={c.brand} type={c.type} key={index}></Car>
+				{this.state.cartypes.map(function(car, index){
+					return <Car className="Car" {...car} key={index}></Car>
 				})}
 			</div>	
         );
