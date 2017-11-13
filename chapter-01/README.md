@@ -7,3 +7,7 @@
 
 ## 10.11.2017
 * `Cars` now displays elements of array in list
+
+## 13.11.2017
+* Created 'Car' component
+* 'Cars' now display elements of array as instances of 'Car' component.
