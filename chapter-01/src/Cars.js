@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import './Cars.css';
 import Car from './Car';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
+import Paper from 'material-ui/Paper';
+import './Cars.css';
+
 
 class Cars extends Component {
     constructor (props) {
@@ -68,18 +72,29 @@ class Cars extends Component {
         
 		
 		return (
-			<div>	
-				<div>
-					<h1>{this.props.title}</h1>	
-				</div>	
+			<div className="container">	
+				<Paper zDepth={2}>
+				    <div className="header">
+					    <AppBar
+							title={this.props.title}
+						/>	
+					</div>	
+				    	
 				
-				{/* generates instances of Car component */}
+				    {/* generates instances of Car component */}
 				
-				{this.state.cartypes.map(function(car, index){
+				    {this.state.cartypes.map(function(car, index){
 
-					return <Car className="Car" {...car} key={index}></Car>
+					    return (
+						
+							<MuiThemeProvider>
+								<Car {...car} key={index} />
+							</MuiThemeProvider>
+						);
+						
 
-				})}
+				    })}
+			    </Paper>
 			</div>	
         );
     }

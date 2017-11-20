@@ -11,3 +11,6 @@
 ## 13.11.2017
 * Created 'Car' component
 * 'Cars' now display elements of array as instances of 'Car' component.
+
+## 20.11.2017
+* Added styles
