@@ -32,7 +32,9 @@ class ProfileAvatar extends Component {
                     title: "Kapitał",
                     author: "Karol Marks"
                 },
-            ]
+            ],
+
+            booksRead: 0
         }
     }
 
@@ -44,8 +46,9 @@ class ProfileAvatar extends Component {
         return (
             <div>
                 <h1>Profile1</h1>
-                <img src={require('./img/avatar1.png')} />
+                <img src={require('./img/avatar1.png')} alt="Avatar" />
                 <p>Liczba wypożyczonych książek: {booksOnLoan}</p>
+                <p>Liczba przeczytanych książek: {this.state.booksRead}</p>
             </div>
         );
       }
