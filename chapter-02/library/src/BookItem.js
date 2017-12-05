@@ -23,6 +23,7 @@ class BookItem extends Component {
         return (
             <div>
                 <p>{this.state.author} - {this.state.title}</p>
+                <button>Zwróć</button>
             </div>
         )
     }
