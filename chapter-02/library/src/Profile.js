@@ -46,6 +46,7 @@ class Profile extends Component {
                 return (
                     <BookItem
                         {...book}
+                        bookButton="Zwróć"
                         key={index}>
                     </BookItem>
                 );

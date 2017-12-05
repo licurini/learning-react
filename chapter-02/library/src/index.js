@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Profile from './Profile';
+import Books from './Books.js';
 
-ReactDOM.render(<Profile />, document.getElementById('root'));
+ReactDOM.render(<Books />, document.getElementById('root'));
