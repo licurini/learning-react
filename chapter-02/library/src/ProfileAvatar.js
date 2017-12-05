@@ -29,18 +29,23 @@ class ProfileAvatar extends Component {
                 },
                 {
                     id: "5",
-                    title: "Kapitał"
+                    title: "Kapitał",
                     author: "Karol Marks"
                 },
             ]
         }
     }
 
+
+
     render() {
+        var booksOnLoan = this.state.booksOnLoan.length;
+
         return (
             <div>
                 <h1>Profile1</h1>
                 <img src={require('./img/avatar1.png')} />
+                <p>Liczba wypożyczonych książek: {booksOnLoan}</p>
             </div>
         );
       }
